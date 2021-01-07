@@ -9,7 +9,7 @@ export class ConsumerController {
   constructor(private readonly consumerService: ConsumerService) {}
 
   @MessagePattern(kafkaTopic)
-  getHello(@Payload() message) {
-    return this.consumerService.getHello(message.value);
+  getHello(@Payload() message): void {
+    return this.consumerService.getHello(message);
   }
 }
