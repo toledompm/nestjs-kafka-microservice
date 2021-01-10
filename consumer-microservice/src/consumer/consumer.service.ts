@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { MessageDto } from '../common/message/message.dto';
 
 @Injectable()
 export class ConsumerService {
-  getHello(message: any): void {
-    console.log(message.value);
+  getHello(message: MessageDto): void {
+    console.log(`Hello ${message.value}!`);
   }
 }

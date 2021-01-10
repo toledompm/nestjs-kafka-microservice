@@ -1,9 +1,5 @@
 {
-    "clientId": "kafka-example-client",
     "groupId": "my-kafka-consumer",
     "kafkaTopic": "my-first-topic",
-    "broker": "localhost:9092",
-    "connectionTimeout": 3000,
-    "authenticationTimeout": 1000,
-    "reauthenticationThreshold": 10000
+    "broker": "localhost:9092"
 }
